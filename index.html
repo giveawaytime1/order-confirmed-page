@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .logo img {
+            max-width: 150px;
+        }
+        .header {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .message {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .order-number {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .item-image {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .item-image a img {
+            max-width: 100%;
+            max-height: 200px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .order-details {
+            text-align: left;
+            margin: 20px 0;
+            padding: 15px;
+            background: #f5f5f5;
+            border-radius: 8px;
+        }
+        .order-details .item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .order-details .item:last-child {
+            font-weight: bold;
+        }
+        .status {
+            margin-top: 30px;
+            text-align: left;
+        }
+        .status-step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        .status-step .status-icon {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #4caf50;
+            flex-shrink: 0;
+            margin-right: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 14px;
+        }
+        .status-step.pending .status-icon {
+            background-color: #ddd;
+            color: #999;
+        }
+        .status-step .status-text {
+            flex-grow: 1;
+        }
+        .status-step .status-text .title {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        .status-step .status-text .description {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">THANK YOU FOR YOUR ORDER</div>
+        <div class="message">
+            You will soon be receiving an e-mail with all the details of your purchase. Once your order will be shipped, you will receive its tracking number.
+        </div>
+        <div class="order-number">YOUR ORDER NUMBER: #DE-00059048</div>
+        <div class="item-image">
+            <a href="https://ibb.co.com/qJ0pkVp">
+                <img src="https://i.ibb.co.com/qJ0pkVp/iphone-14-plus.png" alt="iphone-14-plus" border="0">
+            </a>
+        </div>
+        <div class="order-details">
+            <div class="item">
+                <span>Item Name:</span>
+                <span>Apple Iphone 14 Plus</span>
+            </div>
+            <div class="item">
+                <span>Quantity:</span>
+                <span>1</span>
+            </div>
+            <div class="item">
+                <span>Price:</span>
+                <span>$830</span>
+            </div>
+            <div class="item">
+                <span>Promotion applied</span>
+                <span>$-830</span>
+            </div>
+            <div class="item">
+                <span>Total:</span>
+                <span>$0.00</span>
+            </div>
+        </div>
+        <div class="status">
+            <div class="status-step">
+                <div class="status-icon">✔</div>
+                <div class="status-text">
+                    <div class="title">Order Confirmed</div>
+                    <div class="description">Congratulations! Your order is confirmed.</div>
+                </div>
+            </div>
+            <div class="status-step">
+                <div class="status-icon">✔</div>
+                <div class="status-text">
+                    <div class="title">Order Packaged</div>
+                    <div class="description">We've packed up your order and are just waiting for the carrier to pick it up.</div>
+                </div>
+            </div>
+            <div class="status-step">
+                <div class="status-icon">✔</div>
+                <div class="status-text">
+                    <div class="title">Order Picked Up By Carrier</div>
+                    <div class="description">A tracking link has been generated and is available for you to view.</div>
+                </div>
+            </div>
+            <div class="status-step pending">
+                <div class="status-icon">○</div>
+                <div class="status-text">
+                    <div class="title">Awaiting Order Delivery to Your Shipping Address</div>
+                    <div class="description">Don't forget to use #GotItOnStockX when sharing unboxings.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
